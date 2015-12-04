@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/style_match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/blue_top_bar"
+            android:paddingLeft="10dp"
+            android:paddingRight="0dp"
+            android:gravity="center">
+            <TextView android:id="@+id/home_TextView_AreaList"
+                
+                style="@style/style_wrap_content"
+                android:textSize="28sp"
+                 android:textColor="#ffff"
+               
+                android:text="@string/icon_home"/>
+            <TextView
+                android:id="@+id/title_TextView_AreaList"
+                android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="6dp"
+	            android:layout_marginRight="3dp"
+	            android:layout_weight="1"
+	            android:gravity="left|center"
+	            android:textColor="@color/white"
+	            android:textSize="19sp"
+	            android:singleLine="true"
+	            android:ellipsize="end"
+	             />
+<!--             <TextView android:id="@+id/add_TextView_AreaList" -->
+<!--                style="@style/style_wrap_content" -->
+<!--                 android:textSize="20sp" -->
+<!--                  android:textColor="#ffff" -->
+<!--                 android:text="@string/icon_plus"/> -->
+<!--             <TextView android:id="@+id/dot_TextView_FloorList" -->
+<!--                 style="@style/style_wrap_content" -->
+<!--                 android:textSize="20sp" -->
+<!--                 android:layout_marginLeft="15dp" -->
+<!--                  android:textColor="#ffff" -->
+<!--                 android:text="@string/icon_dot"/> -->
+         <ImageView
+                android:id="@+id/plus"
+                android:layout_width="30dp"
+                 android:layout_marginTop="2dp"
+                android:layout_height="30dp"
+                android:src="@drawable/plus1"/>
+
+          <ImageView
+                android:id="@+id/dot"
+                android:layout_width="30dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_height="30dp"
+                android:src="@drawable/dot"/>
+      </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_topbar_tab"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/floor_TextView_AreaList"
+                 style="@style/style_TextView"
+                android:textSize="18sp"
+                android:textColor="@color/openstate"
+                
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="@string/floor"/>
+            
+            <TextView
+                android:id="@+id/area_TextView_AreaList"
+                style="@style/style_TextView"
+                android:textSize="18sp"
+                android:text="@string/area" 
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/blue_top_bar"/>
+            
+            <TextView
+                android:id="@+id/fixtures_TextView_AreaList"
+                style="@style/style_TextView"
+                android:textSize="18sp"
+                android:textColor="@color/closestate"
+                android:layout_marginLeft="40dp"
+                android:text="@string/fixtures" />
+        </LinearLayout>
+        <View
+            android:layout_width="115dp"
+            android:layout_height="4dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/icon_blue_line" />
+        
+      <ListView
+            android:id="@+id/areaListview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:listSelector="#87CEEB"
+            android:cacheColorHint="#00000000" >
+        </ListView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/icon_blue_line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_topbar_tab"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+            <TextView
+                android:visibility="invisible"
+                style="@style/style_wrap_content"
+                android:text="@string/delete"
+                android:textColor="@color/alart_major"
+                android:textSize="24sp" />
+        </LinearLayout>
+  </LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="100dp" -->
+    <!-- android:id="@+id/txt_new" -->
+    <!-- android:gravity="center" -->
+    <!-- android:textSize="50dp" -->
+    <!-- android:layout_marginLeft="80dp" -->
+    <!-- android:textColor="#00CC00" -->
+    <!-- android:text="@string/icon_plus"/> -->
+
+    <ImageView
+        android:id="@+id/txt_new"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/greenplus" />
+
+    <TextView
+        android:id="@+id/hh"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:textSize="42dp" />
+    <!-- <TextView -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="100dp" -->
+    <!-- android:id="@+id/txt_new" -->
+    <!-- android:layout_weight=".8" -->
+    <!-- android:gravity="center" -->
+    <!-- android:textSize="36dp" -->
+    <!-- android:text="Click Add to add new Fixture"/> -->
+    <!-- <Button -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:id="@+id/btn_add" -->
+    <!-- android:layout_weight=".2" -->
+    <!-- android:text="@string/add" -->
+    <!-- android:textSize="40dp" -->
+    <!-- android:textStyle="bold" -->
+    <!-- android:textColor="@color/openstate" -->
+    <!-- android:background="#00000000" /> -->
+
+</LinearLayout>

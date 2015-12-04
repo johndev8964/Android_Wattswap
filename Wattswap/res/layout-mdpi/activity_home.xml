@@ -1,0 +1,195 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_match_parent" 
+    android:id="@+id/drawer_layout">
+    
+    <!-- Your main screen -->
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+<!--     <RelativeLayout -->
+<!--         android:id="@+id/topRL" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:background="#ffffff" -->
+<!--         android:orientation="horizontal" > -->
+
+<!--         <ImageButton -->
+<!--             android:id="@+id/left_drawer_button" -->
+<!--             android:layout_width="30dp" -->
+<!--             android:layout_height="30dp" -->
+<!--             android:layout_alignParentLeft="true" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:gravity="center_vertical" -->
+<!--             android:onClick="onOpenLeftDrawer" -->
+<!--             android:src="@drawable/icon_list" /> -->
+
+<!--     </RelativeLayout> -->
+
+    <FrameLayout
+        android:id="@+id/frame_to_be_replaced"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topRL" >
+        
+       
+    <LinearLayout
+        
+        style="@style/style_match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <!-- This acts as Actionbar -->
+        <ImageButton
+            android:id="@+id/button_menu"
+           
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:onClick="toggleMenu"
+            android:src="@drawable/icon_list" />
+       
+       
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                style="@style/style_wrap_content"
+                android:layout_width="200dp"
+                 android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/surveylogo2" />
+
+            <TextView
+                style="@style/style_wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/scheduled_today"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/scheduled_Value_TextView_HomeDashboard"
+                style="@style/style_wrap_content"
+                android:textColor="@color/blue_top_bar"
+                android:text="@string/lbl_count_default"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+            
+                 
+
+               <ImageView
+                android:id="@+id/sign_in_dropbox_button"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                style="@style/style_wrap_content"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/icon_dropboxsignin"/>
+            
+                
+            <TextView
+                android:id="@+id/add_New_Survey_TextView_HomeDashboard"
+                style="@style/style_wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/add_new_survey"
+                android:textColor="@color/blue_top_bar"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout></FrameLayout>
+     </RelativeLayout>   
+    <!-- Left Side View with List -->
+   
+   <RelativeLayout
+    android:id="@+id/whatYouWantInLeftDrawer"
+    android:layout_width="290dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/white">
+    <LinearLayout
+        
+        style="@style/style_match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/blue_top_bar"
+            android:gravity="center" >
+            <TextView
+                style="@style/style_wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/title_survey"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_topbar_tab"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+            <TextView
+                android:id="@+id/open_TextView_Home"
+                style="@style/style_TextView"
+                android:textColor="@color/openstate"
+                android:text="@string/open" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white" />
+            <TextView
+                android:id="@+id/close_TextView_Home"
+                style="@style/style_TextView"
+                android:textColor="@color/closestate"
+                android:text="@string/close" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/icon_blue_line" />
+        
+        <ListView
+            android:id="@+id/survey_listview_Home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+             android:listSelector="#87CEEB"
+            android:cacheColorHint="#00000000" >
+        </ListView>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/icon_blue_line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_topbar_tab"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+            <TextView
+                android:id="@+id/add_New_Survey_TextView_Home"
+                style="@style/style_wrap_content"
+                android:text="@string/add_new_survey"
+                android:textColor="@color/blue_top_bar"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+    
+
+</android.support.v4.widget.DrawerLayout>

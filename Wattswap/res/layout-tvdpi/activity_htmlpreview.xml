@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/blue_top_bar"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/htmlPreview_back"
+            style="@style/style_wrap_content"
+            android:textColor="@color/openstate"
+            android:text="Back"
+            android:textStyle="bold"
+            android:textSize="36sp" />
+
+        <TextView
+           
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textStyle="bold" />
+
+        <TextView
+           
+            style="@style/style_wrap_content"
+            android:text=""
+            android:textColor="@color/openstate"
+            android:textStyle="bold"
+            android:textSize="40sp" />
+    </LinearLayout>
+<WebView 
+    android:id="@+id/webViewHtmlPreview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+</WebView>
+ </LinearLayout>

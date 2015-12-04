@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue_top_bar"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/cancel_TextView_AddNewSurvey"
+            style="@style/style_wrap_content"
+            android:text="@string/cancel"
+            android:textColor="@color/openstate"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/titleTextView_NewSurvey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/new_lbl"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save_TextView_AddNewSurvey"
+            style="@style/style_wrap_content"
+            android:text="@string/save"
+            android:textColor="@color/openstate"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/icon_blue_line" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="30dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_facility_add"
+                android:textColor="@color/blue_top_bar"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_name"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_SurveyName_AddNewSurvey"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_add1"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_Add1_AddNewSurvey"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_add2"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_Add2_AddNewSurvey"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_city"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_City_AddNewSurvey"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="@string/lbl_state"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_state"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content" />
+                <!--
+                         <EditText 
+                        android:id="@+id/editText_State_AddNewSurvey"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textSize="16sp"/>
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_zip"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_Zip_AddNewSurvey"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/lbl_contact_information"
+                android:textColor="@color/blue_top_bar"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_name"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_CName_AddNewSurvey"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_phone"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_Phone_AddNewSurvey"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_email"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_Email_AddNewSurvey"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textWebEmailAddress"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_scheduled"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_Scheduled_AddNewSurvey"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_note"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_Note_AddNewSurvey"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/lbl_building_setup"
+                android:textColor="@color/blue_top_bar"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_hunit"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_Howmanyunits_AddNewSurvey"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_buildtype"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_Buildingtype_AddNewSurvey"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_reffby"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_refferedby_AddNewSurvey"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_tsqurefu"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_totalsquarefootage_AddNewSurvey"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_ucmpny"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_utilitycmpny_AddNewSurvey"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_Accnum"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_accountnum_AddNewSurvey"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/icon_blue_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/lbl_facility_image"
+                android:textColor="@color/blue_top_bar"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/removeImageTextView_addsurvey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="30dp"
+                android:drawableRight="@drawable/icon_camera"
+                android:text="@string/lbl_remove_images"
+                android:textColor="@color/alart_major"
+                android:textSize="18sp"
+                android:visibility="gone" >
+            </TextView>
+
+            <!--
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView 
+				        android:id="@+id/removeImageTextView"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="20dp"
+				        android:visibility="gone"
+				        android:textSize="18sp"
+				        android:textColor="@color/alart_major"
+				        android:text="@string/lbl_remove_images"/>
+                    <ImageView
+                        android:id="@+id/camera_imageView_AddNewSurvey" 
+                        android:layout_width="60dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="30dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_camera"/>
+                </LinearLayout>
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/icon_blue_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_topbar_tab"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/delete_Survey_TextView"
+            style="@style/style_wrap_content"
+            android:text="@string/delete"
+            android:textColor="@color/alart_major"
+            android:textSize="24sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

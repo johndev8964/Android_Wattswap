@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:weightSum="1"
+    android:gravity="center_vertical">
+    
+<!--      <TextView  -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="100dp" -->
+<!--         android:id="@+id/txt_new" -->
+<!--         android:textSize="35sp" -->
+<!--         android:gravity="center" -->
+<!--         android:layout_marginLeft="70dp" -->
+<!--         android:textColor="#00CC00" -->
+<!--         android:text="@string/icon_plus"/> -->
+<ImageView
+                android:id="@+id/txt_new"
+                android:layout_width="50dp"
+                 android:layout_marginTop="2dp"
+                 android:layout_marginLeft="20dp"
+                 android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:src="@drawable/greenplus"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/hh"
+       android:layout_marginLeft="35dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        />
+    
+<!--     <TextView  -->
+<!--         android:layout_width="0dp" -->
+<!--         android:layout_height="100dp" -->
+<!--         android:id="@+id/txt_new" -->
+<!--         android:layout_weight=".8" -->
+<!--         android:gravity="center" -->
+<!--         android:textSize="30dp" -->
+<!--         android:text="Click Add to add new Fixture"/> -->
+<!--     <Button  -->
+<!--         android:layout_width="0dp" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:id="@+id/btn_add" -->
+<!--         android:layout_weight=".2" -->
+<!--         android:text="@string/add" -->
+<!--         android:textSize="34dp" -->
+<!--         android:textStyle="bold" -->
+<!--         android:textColor="@color/openstate" -->
+<!--         android:background="#00000000" /> -->
+	
+</LinearLayout>

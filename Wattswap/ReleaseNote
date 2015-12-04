@@ -1,0 +1,15 @@
+Release Note Details: Latest Version
+************************************************
+            Apk Name: SurveyApp.apk
+        Version Name: 1.0
+
+~~~~~~~~~~~~~~~~~~~~~~~
+Alkesh :
+~~~~~~~~~~~~~~~~~~~~~~~
+1. Up to All bug resolved.
+2. Naming Structure in SD card implemented.
+3. Map Direction implemented.
+4. Current Time added after image path to resolve samsung camera inssue. 
+5. Edit and Delete floor and Area by use of Listview item button 
+6. Swipe left and right implemented.
+7. Layout Design for 7 inch tablet

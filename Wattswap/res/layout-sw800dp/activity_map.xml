@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/style_match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/blue_top_bar"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center">
+            <TextView android:id="@+id/back_TextView_Map"
+                style="@style/style_wrap_content"
+                 android:textSize="38sp"
+                android:textColor="@color/openstate"
+                android:text="@string/back"/>
+            <View android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <TextView android:id="@+id/getdirection_TextView_Map"
+                style="@style/style_wrap_content"
+                android:textSize="38sp"
+                android:textColor="@color/openstate"
+                android:text="@string/lbl_getdirection"/>
+      </LinearLayout>
+       <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/icon_blue_line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_topbar_tab"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+            <TextView
+                android:visibility="invisible"
+                style="@style/style_wrap_content"
+                android:text="@string/delete"
+                android:textColor="@color/alart_major"
+                android:textSize="34sp" />
+        </LinearLayout>
+  </LinearLayout>

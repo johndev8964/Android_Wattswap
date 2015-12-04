@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="green">#23cf34</color>
+    <color name="orange">#E47833</color>
+    <color name="lite_blue">#4E78A0</color>
+    <color name="blue">#0000FF</color>
+    <color name="backcolorbtn">#21B2F4</color>
+    <color name="defaultyello">#ffc579</color>
+    <color name="red">#ff0000</color>
+        
+    <color name="blue_top_bar">#ff11b5e2</color>
+    <color name="gray">#ff9b9b9b</color>
+    <color name="openstate">#ff095e75</color>
+    <color name="closestate">#ffc5e1fa</color>
+       
+    <color name="list_selected_color">#f7b329</color>
+    <color name="list_normal_color">#79bad1</color>
+    <color name="transperant">#00000000</color>
+    
+    <color name="alart_major">#c45151</color>
+    <color name="alart_minor">#f4ac25</color>
+    
+    <color name="theme_skyblue">#ddfafe</color>
+    <color name="theme_purpale">#fceeef</color>
+    <color name="theme_purpale2">#feeaed</color>
+    
+    <color name="normal_font_color">#236f74</color> 
+    <color name="selected_font_color">#8d8f8f</color>
+    <color name="title_font_color">#66bac0</color>
+    
+    <color name="Disable_Color1">#99ccff</color>
+    <color name="Disable_Color2">#f0eee2</color>
+    
+    <color name="transperant_black">#44000000</color>
+    <color name="GrayLight">#eeeeee</color>
+    
+</resources>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="state">
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>District of Columbia</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Guam</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+    </string-array>
+    <array name="image_select_option">
+          <item>Take from camera</item>
+          <item>Select from gallery</item>
+          <item>Cancel</item>
+    </array>
+    <array name="Typefixures">
+        <item>Linear T-12</item>  	<!-- 0 -->
+        <item>Linear T-8</item>		<!-- 1 -->
+        <item>Linear T-5</item>		<!-- 2 -->
+        <item>Circline</item>		<!-- 3 -->
+        <item>Inc</item>			<!-- 4 -->
+        <item>Inc - Hal</item>		<!-- 5 -->
+        <item>Exit Inc</item>		<!-- 6 -->
+        <item>Exit CFL</item>		<!-- 7 -->
+        <item>Exit LED</item>		<!-- 8 -->
+        <item>CFL</item>			<!-- 9 -->
+        <item>MH</item>				<!-- 10 -->
+        <item>HPS</item>			<!-- 11 -->
+    </array>
+    
+    <array name="CodeLinearT12">
+        <item>F1.51SS</item>
+        <item>F1.52SS</item>
+        <item>F21SS</item>
+        <item>F22SS</item>
+        <item>F23SS</item>
+        <item>F24SS</item>
+        <item>F31SS</item>
+        <item>F32SS</item>
+        <item>F33SS</item>
+        <item>F34SS</item>
+        <item>F41ES</item>
+        <item>F42ES</item>
+        <item>F43ES</item>
+        <item>F44ES</item>
+        <item>F61SHS</item>
+        <item>F61SS</item>
+        <item>F62SS</item>
+        <item>F63SS</item>
+        <item>F64SS</item>
+        <item>F81ES</item>
+        <item>F82ES</item>
+        <item>F83ES</item>
+        <item>F84ES</item>
+        <item>FU2ES</item>
+    </array>
+    
+    <array name="CodeLinearT8">
+        <item>F1.51LS</item>
+        <item>F1.52LS</item>
+        <item>F21ILL</item>
+        <item>F22ILL</item>
+        <item>F23ILL</item>
+        <item>F24ILL</item>
+        <item>F31ILL</item>
+        <item>F32ILL</item>
+        <item>F33ILL</item>
+        <item>F34ILL</item>
+        <item>F41ILL</item>
+        <item>F42ILL</item>
+        <item>F43ILL</item>
+        <item>F44ILL</item>
+        <item>F46ILL</item>
+        <item>F48ILL</item>
+        <item>F62ILHL</item>
+        <item>F81ILL</item>
+        <item>F82ILL</item>
+        <item>F83ILL</item>
+        <item>FU2ILL</item>
+    </array>
+    
+    <array name="CodeLinearT5">
+        <item>F21GL</item>
+        <item>F22GL</item>
+        <item>F41GHL</item>
+        <item>F41GL</item>
+        <item>F42GHL</item>
+        <item>F42GL</item>
+        <item>F43GHL</item>
+        <item>F44GHL</item>
+        <item>F46GHL</item>
+        <item>F48GHL</item>
+    </array>
+    
+    <array name="CodeCircline">
+        <item>FC8/1</item>
+        <item>FC32/1</item>
+        <item>FC22/32/1</item>
+    </array>
+
+    <array name="CodeInc">
+        <item>I25/1</item>
+        <item>I40/1</item>
+        <item>I50/1</item>
+        <item>I60/1</item>
+        <item>I75/1</item>
+        <item>I100/1</item>
+        <item>I120/1</item>
+    </array>
+
+    <array name="CodeIncHal">
+        <item>H35/1</item>
+        <item>H50/1</item>
+    </array>
+
+    <array name="CodeExitInc">
+        <item>EI10/2</item>
+        <item>EI20/1</item>
+    </array>
+    
+    <array name="CodeExitCFL">
+        <item>EI20/2</item>
+        <item>ECF7/1</item>
+        <item>ECF7/2</item>
+    </array>
+    
+    <array name="CodeExitLED">
+        <item>ELED1.5/1</item>
+    </array>
+    
+    <array name="CodeCFL">
+        <item>CFQ13/1</item>
+        <item>CFQ13/2</item>
+        <item>CFQ13/3</item>
+        <item>CFS15/1</item>
+        <item>CFT32/1-L</item>
+        <item>CFT32/2-L</item>
+        <item>CFT36/4-BX</item>
+    </array>
+    
+    <array name="CodeMH">
+        <item>MH50/1</item>
+        <item>MH70/1</item>
+        <item>MH100/1</item>
+        <item>MH150/1</item>
+        <item>MH175/1</item>
+        <item>MH200/1</item>
+        <item>MH250/1</item>
+        <item>MH400/1</item>
+        <item>MH1000/1</item>
+    </array>
+
+    <array name="CodeHPS">
+        <item>HPS100/1</item>
+        <item>HPS1000/1</item>
+        <item>HPS150/1</item>
+        <item>HPS175/1</item>
+        <item>HPS250/1</item>
+        <item>HPS400/1</item>
+        <item>HPS50/1</item>
+        <item>HPS70/1</item>
+    </array>
+    
+ 	<array name="CodeOther">
+        <item>F1.51SS</item>
+        <item>F1.52SS</item>
+        <item>F21SS</item>
+        <item>F22SS</item>
+        <item>F23SS</item>
+        <item>F24SS</item>
+        <item>F31SS</item>
+        <item>F32SS</item>
+        <item>F33SS</item>
+        <item>F34SS</item>
+        <item>F41ES</item>
+        <item>F42ES</item>
+        <item>F43ES</item>
+        <item>F44ES</item>
+        <item>F61SHS</item>
+        <item>F61SS</item>
+        <item>F62SS</item>
+        <item>F63SS</item>
+        <item>F64SS</item>
+        <item>F81ES</item>
+        <item>F82ES</item>
+        <item>F83ES</item>
+        <item>F84ES</item>
+        <item>FU2ES</item>
+    </array>
+
+
+
+
+    <array name="StyleLinearT12">
+        <item>Strip</item>
+        <item>Troffer</item>
+        <item>Wrap</item>
+        <item>Surface Mount</item>
+        <item>Cove</item>
+        <item>Vapor Tight</item>
+    </array>
+    
+    <array name="StyleLinearT8_T5">
+        <item>Strip</item>
+        <item>Troffer</item>
+        <item>Wrap</item>
+        <item>Surface Mount</item>
+        <item>Cove</item>
+        <item>Vapor Tight</item>
+        <item>Highbay</item>
+    </array>
+    
+    <array name="StyleCircline">
+        <item>Covered</item>
+        <item>Uncovered</item>
+    </array>
+
+    <array name="StyleInc">
+        <item>A-Lamp</item>
+        <item>Candelabra</item>
+        <item>PAR 20</item>
+        <item>PAR 30</item>
+        <item>PAR 38</item>
+    </array>
+
+    <array name="StyleIncHal">
+        <item>MR 16</item>
+        <item>GU 10</item>
+    </array>
+
+    <array name="StyleExit">
+        <item>Single Sided</item>
+        <item>Double Sided</item>
+    </array>
+    
+    <array name="StyleCFL">
+        <item>Screw In</item>
+        <item>Pin Base</item>
+        <item>GU 24</item>
+    </array>
+    
+    <array name="StyleMH_HPS">
+        <item>Wallpack</item>
+        <item>Tallpack</item>
+        <item>Flood</item>
+        <item>High Hat</item>
+        <item>Highbay</item>
+        <item>Pole</item>
+    </array>
+    
+ 	<array name="StyleOther">
+        <item>Strip</item>
+        <item>Troffer</item>
+        <item>Wrap</item>
+        <item>Surface Mount</item>
+        <item>Cove</item>
+        <item>Vapor Tight</item>
+    </array>
+
+
+    <array name="Mounting">
+        <item>Ceiling</item>
+        <item>Wall</item>
+        <item>Chain</item>
+    </array>
+    
+    <array name="Controlled">
+        <item>Switch</item>
+        <item>OC Sensor</item>
+        <item>PC Sensor</item>
+        <item>Breaker</item>
+    </array>
+    
+    <array name="Options">
+        <item>None</item>
+        <item>Pipe To Fixture</item>
+        <item>Battery Back Up</item>
+        <item>Improper Wiring</item>
+        <item>Fixture Obstructed</item>
+    </array>
+    
+    <array name="Height">
+        <item>Normal</item>
+        <item>15+</item>
+        <item>20+</item>
+        <item>30+</item>
+    </array>
+    
+    <array name="Hours">
+        <item>"8760"</item>
+        <item>"4380"</item>
+        <item>"2190"</item>
+        <item>"2080"</item>
+    </array>
+    
+    <array name="hourauto">
+        <item>"01"</item>
+        <item>"02"</item>
+        <item>"03"</item>
+        <item>"04"</item>
+        <item>"05"</item>
+        <item>"06"</item>
+        <item>"07"</item>
+        <item>"08"</item>
+        <item>"09"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"9"</item>
+        <item>"10"</item>
+        <item>"11"</item>
+        <item>"12"</item>
+        <item>"13"</item>
+        <item>"14"</item>
+        <item>"15"</item>
+        <item>"16"</item>
+        <item>"17"</item>
+        <item>"18"</item>
+        <item>"19"</item>
+        <item>"20"</item>
+        <item>"21"</item>
+        <item>"22"</item>
+        <item>"23"</item>
+        <item>"24"</item>
+    </array>
+    
+    <array name="Ballast_type">
+        <item>"Electronic"</item>
+        <item>"Magnetic"</item>
+        
+    </array>
+     <array name="Ballast_factor">
+        <item>"Low Power Factor (0.77)"</item>
+        <item>"Normal Power Factor (0.85)"</item>
+        <item>"Hi Power Factor (1.05)"</item>
+    </array>
+
+</resources>

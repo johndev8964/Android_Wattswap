@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/blue_top_bar"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/home_TextView_FixturesList"
+            style="@style/style_wrap_content"
+            android:text="@string/icon_home"
+            android:textColor="#ffff"
+            android:textSize="44sp" />
+
+        <TextView
+            android:id="@+id/title_TextView_FixtureList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+        <!-- <TextView android:id="@+id/add_TextView_FixtureList" -->
+        <!-- style="@style/style_wrap_content" -->
+        <!-- android:textSize="40sp" -->
+        <!-- android:textColor="#ffff" -->
+        <!-- android:layout_marginRight="3dp" -->
+        <!-- android:text="@string/icon_plus"/> -->
+        <!-- <TextView android:id="@+id/dot_TextView_FloorList" -->
+        <!-- style="@style/style_wrap_content" -->
+        <!-- android:textSize="40sp" -->
+        <!-- android:layout_marginLeft="30dp" -->
+        <!-- android:textColor="#ffff" -->
+        <!-- android:text="@string/icon_dot"/> -->
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/plus1" />
+
+        <ImageView
+            android:id="@+id/dot"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/dot" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_topbar_tab"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/floor_TextView_fixtureList"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/floor"
+            android:textColor="@color/openstate"
+            android:textSize="40sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/icon_vertical_line" />
+
+        <TextView
+            android:id="@+id/area_TextView_fixtureList"
+            style="@style/style_TextView"
+            android:layout_marginLeft="70dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/area"
+            android:textColor="@color/openstate"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/fixtures_TextView_fixtureList"
+            style="@style/style_TextView"
+            android:layout_marginLeft="90dp"
+            android:text="@string/fixtures"
+            android:textColor="@color/blue_top_bar"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="270dp"
+        android:layout_height="7dp"
+        android:layout_marginLeft="520dp"
+        android:background="@drawable/icon_blue_line" />
+
+    <ListView
+        android:id="@+id/fixturesListview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#87CEEB" >
+    </ListView>
+    <!-- <View -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="4dp" -->
+    <!-- android:background="@drawable/icon_blue_line" /> -->
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/icon_topbar_tab" -->
+    <!-- android:gravity="right" -->
+    <!-- android:orientation="horizontal" -->
+    <!-- android:paddingBottom="10dp" -->
+    <!-- android:paddingRight="20dp" -->
+    <!-- android:paddingTop="10dp" > -->
+    <!-- <TextView -->
+    <!-- android:id="@+id/finish_fixtures" -->
+    <!-- style="@style/style_wrap_content" -->
+    <!-- android:text="@string/finish" -->
+    <!-- android:textStyle="bold" -->
+    <!-- android:textColor="@color/alart_major" -->
+    <!-- android:textSize="40sp" /> -->
+    <!-- </LinearLayout> -->
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal" 
+    android:gravity="center_vertical">
+    <ImageView 
+        android:id="@+id/itemImageFixures"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/app_name"/>
+    <LinearLayout android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView android:id="@+id/itemFixuresName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/openstate"/>
+        <TextView android:id="@+id/itemFixuresDiscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/gray"
+            android:textSize="9sp"/>
+    </LinearLayout>
+    
+    <ViewFlipper 
+          android:id="@+id/listViewFlipper"
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:layout_gravity="right">
+        
+    	      <TextView android:id="@+id/itemFixuresCount"
+	            android:layout_width="20dp"
+	            android:layout_height="20dp"
+	            android:textColor="@color/blue_top_bar"
+	            android:gravity="center_vertical"
+	            android:singleLine="true"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="5dp"
+	            android:drawablePadding="10dp"
+	            android:textSize="12sp"
+	            android:drawableRight="@drawable/icon_navigation_next"
+	            />
+        
+    	      <ImageView
+                  android:id="@+id/deleteButtonItem"
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  android:contentDescription="@string/app_name"
+                  android:textColor="@color/white"
+                  android:background="@drawable/icon_delete_with_text"/>
+    	      
+      </ViewFlipper>
+      
+</LinearLayout>

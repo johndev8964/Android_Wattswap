@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="50dp" -->
+    <!-- android:id="@+id/txt_new" -->
+    <!-- android:gravity="center" -->
+    <!-- android:layout_marginLeft="30dp" -->
+    <!-- android:textColor="#00CC00" -->
+    <!-- android:text="@string/icon_plus"/> -->
+
+    <ImageView
+        android:id="@+id/txt_new"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/greenplus" />
+
+    <TextView
+        android:id="@+id/hh"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center" />
+    <!-- <Button -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:id="@+id/btn_add" -->
+    <!-- android:layout_weight=".2" -->
+    <!-- android:text="@string/add" -->
+    <!-- android:textStyle="bold" -->
+    <!-- android:textColor="@color/openstate" -->
+    <!-- android:background="#00000000" /> -->
+
+</LinearLayout>
